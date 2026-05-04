@@ -1,0 +1,139 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #454545;
+    line-height: 1.6;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    background-color: #fff;
+}
+
+.quote {
+    font-size: 10px;
+}
+
+small {
+    font-size: 6px;
+}
+
+mark.red {
+    color: #730000;
+    background: none;
+}
+
+mark.underline-red {
+    color: #c0392b;
+    text-decoration: underline;
+    background: none;
+}
+
+mark.underline-blue {
+    color:#730000;
+    text-decoration: underline blue;
+    background: none;
+}
+
+mark.blue {
+    color: #00e;
+    background: none;
+    cursor:not-allowed;
+}
+
+mark.purple {
+    color:#551a8b;
+    background: none;
+    cursor:not-allowed;
+}
+
+mark.visited {
+    color: #941352;
+    background: none;
+}
+
+.gap-text {
+    font-family: monospace;
+    font-size: 1.1em;
+    margin-left: 3em;
+}
+
+.square {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.bg-color-444 {
+    background-color: #444;
+}
+
+.bg-color-454545 {
+    background-color: #454545;
+}
+
+.color-444 {
+    color: #444;
+    font-weight:800;
+}
+
+.color-454545 {
+    color: #454545;
+    font-weight:800;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 2em;
+    align-items: flex-start;
+}
+
+.picture .legend {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.8em;
+    text-align: center;
+}
+
+.text p:first-child {
+    margin-top: 0;
+}
+
+.kopimi {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+}
+
+.boutons-fixe {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 5px;
+    z-index: 1000;
+}
+
+.boutons-fixe button {
+    width: auto; 
+    white-space: nowrap; 
+    border: 0;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+}
+
+.btn-contrast {
+    background-color: #f0f0f0;
+}
+
+.btn-mode {
+    background-color: #000;
+    color: #fff;
+}
