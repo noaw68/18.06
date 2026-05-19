@@ -1,0 +1,237 @@
+/* --- STYLES GÉNÉRAUX --- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #050515;
+}
+
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.red {
+    color: red;
+}
+
+/* --- NAVBAR --- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #050515;
+    opacity: 90%;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --- ACCUEIL --- */
+#accueil {
+    text-align: center;
+}
+
+/* --- COMPÉTENCES --- */
+#competences {
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+#competences h2 {
+    margin-bottom: 50px;
+}
+
+.grid-competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.carte-competence {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-competence:hover {
+    box-shadow: 0 10px 25px #00000014;
+    transform: translateY(-5px);
+}
+
+.carte-competence h3 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    color: #0f172a;
+}
+
+.carte-competence ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.carte-competence li {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* --- PROJETS --- */
+.projet-ligne {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.projet-ligne.inverse {
+    flex-direction: row-reverse;
+}
+
+.projet-media, .projet-texte {
+    flex: 1;
+}
+
+.projet-media video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px black;
+    display: block;
+}
+
+.projet-texte {
+    padding: 0 20px;
+}
+
+/* --- CONTACT --- */
+#contact {
+    max-width: 500px;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f4f5f7;
+    font-family: inherit;
+}
+
+.form button {
+    width: 100%;
+    background-color: #050515;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form button:hover {
+    background-color: #333333;
+}
+
+/* --- FOOTER --- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #050515;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    gap: 15px;
+}
+
+.icone-cercle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icone-cercle:hover {
+    background-color: #e4e6eb;
+    transform: translateY(-5px);
+    color: #000000;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .projet-ligne, 
+    .projet-ligne.inverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
