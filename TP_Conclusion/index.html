@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecole Surf</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="#">Surf Academy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Maison <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            A Propos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" role="menu">
+                            <a class="dropdown-item" href="#info">Apprendre à Surfer</a>
+                            <a class="dropdown-item" href="#info">Location de Matériel</a>
+                            <a class="dropdown-item" href="#info">Notre Ecole</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <img src="ban.jpg" class="ban-responsive" alt="Un surfeur en plein take-off au cœur d'une vague">
+    <main class="main-container">
+        <h1>Bienvenue à la Surf Academy</h1>
+        <div class="info-section" id="info">
+            <div class="carte-info">
+                <h2>Apprendre à Surfer</h2>
+                <p>Découvrez les joies de la glisse ! Que vous n'ayez jamais touché une planche ou que vous souhaitiez
+                    perfectionner votre "take-off", nos moniteurs diplômés vous accompagnent en toute sécurité.</p>
+                <button class="btn btn-outline-info">Formulaire</button>
+            </div>
+
+            <div class="carte-info">
+                <h2>Location de Matériel</h2>
+                <p>Voyagez léger, nous avons tout ce qu'il vous faut. Louez des planches et des combinaisons de haute
+                    qualité adaptées à votre gabarit et à la température de l'eau.</p>
+                <button class="btn btn-outline-info">Nos tarifs</button>
+            </div>
+
+            <div class="carte-info">
+                <h2>Notre École & Le Spot</h2>
+                <p>Située sur l'une des plus belles plages de la côte, la Surf Academy vous accueille dans une ambiance
+                    familiale. Rencontrez notre équipe de passionnés locaux.</p>
+                <button class="btn btn-outline-info">En savoir plus</button>
+            </div>
+        </div>
+
+        <form class="form-example" id="form">
+            <h3>Formulaire de contact</h3>
+
+            <label>
+                Nom et prénom <span class="red">*</span>
+                <input type="text" name="fullname" placeholder="Votre Nom et Prénom" required>
+            </label>
+
+            <label>
+                E-mail <span class="red">*</span>
+                <input type="email" name="email" placeholder="votre@email.com" required>
+            </label>
+
+            <label>
+                Sujet de votre demande <span class="red">*</span>
+                <select name="form" id="form-select" required>
+                    <option value="">--Veuillez choisir une option--</option>
+                    <option value="Inscription">Inscription cours</option>
+                    <option value="location">Location de matériel</option>
+                    <option value="info">Demande de renseignement</option>
+                    <option value="other">Autre</option>
+                </select>
+            </label>
+
+            <label>
+                Description <span class="red">*</span>
+                <textarea name="description" rows="4" placeholder="Votre message..." required></textarea>
+            </label>
+
+            <p><span class="red">*</span><small> Champs obligatoires</small></p>
+            <input type="submit" value="Envoyer" class="btn btn-info">
+        </form>
+    </main>
+    <footer class="footer-simple">
+        <div class="footer-col">
+            <h4>Surf Academy</h4>
+            <p>École de surf fictive (Loi 1901).</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Informations</h4>
+            <ul>
+                <li><a href="#info">Nos Cours</a></li>
+                <li><a href="#form">Nous Contacter</a></li>
+                <li><a href="#">Mentions Légales</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Réseaux Sociaux</h4>
+            <div class="reseaux">
+                <a href="https://facebook.com" class="btn-social">Facebook</a>
+                <a href="https://instagram.com" class="btn-social">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
